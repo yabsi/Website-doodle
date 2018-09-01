@@ -17,13 +17,11 @@ Education
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
+* Summer 2018: Software Engineer Apprentice **Source Allies**
   * Duties included: Tagging issues
   * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
+* Summer/Fall 2017: Software Developer **Complex Computation LLC**
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
