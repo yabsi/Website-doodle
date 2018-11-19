@@ -11,6 +11,6 @@ SE 185 was a good introduction class that helped me formulate and solve engineer
 
 SE 309, 319, 339, and Senior Design were team-based classes that helped me work in groups, recognize issues, and we covered multiple cases and studied ethics.
 
-Hackathons, are probably my favorite activity to do at ISU, I have done 8 so far and I'm looking to do two more before graduating! They're 36 hour events were you build a solution from scratch. It helped me gain a skill of continuous learning. 
+Hackathons, are probably my favorite activity to do at ISU, I have done 8 so far and I'm looking to do two more before graduating! They're 36 hour events were you build a solution from scratch. It helped me gain a skill of continuous learning. Because of hackathons and work experience, I've started to tackle real problems and released open source libraries as well as work on solutions for my job(Currently working on a mailroom solution).
 
 I don't think I would change anything about my undergraduate work, but maybe I'd choose different classes if I Had more time.
