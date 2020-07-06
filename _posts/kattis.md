@@ -1,0 +1,35 @@
+---
+title: 'Solved Problems on Kattis'
+date: 2020-07-05
+permalink: /posts/2020/07/kattis/
+tags:
+  - solved-problems
+---
+
+
+Since July 2nd, I have started working through Kattis problems. I like the platform so far and it might actually be one of my favorite online judges.
+Here's the ones I've solved so far. I will be updating this weekly.  
+
+|Problem|
+| --- |
+| [A New Alphabet](https://open.kattis.com/problems/anewalphabet) | 
+| [Autori](https://open.kattis.com/problems/autori) | 
+| [Collatz Conjecture](https://open.kattis.com/problems/collatz) | 
+| [Filip](https://open.kattis.com/problems/filip) | 
+| [FizzBuzz](https://open.kattis.com/problems/fizzbuzz) | 
+| [Flexible Spaces](https://open.kattis.com/problems/flexible) | 
+| [Hello World!](https://open.kattis.com/problems/hello) | 
+| [No Duplicates](https://open.kattis.com/problems/nodup) | 
+| [Oddities](https://open.kattis.com/problems/oddities) | 
+| [Permutation Encryption](https://open.kattis.com/problems/permutationencryption) | 
+| [Pizza Crust](https://open.kattis.com/problems/pizza2) | 
+| [Pot](https://open.kattis.com/problems/pot) | 
+| [Quadrant Selection](https://open.kattis.com/problems/quadrant) | 
+| [Quick Brown Fox](https://open.kattis.com/problems/quickbrownfox) | 
+| [Secret Message](https://open.kattis.com/problems/secretmessage) | 
+| [Simple Addition](https://open.kattis.com/problems/simpleaddition) | 
+| [Soft Passwords](https://open.kattis.com/problems/softpasswords) | 
+| [Take Two Stones](https://open.kattis.com/problems/twostones) | 
+| [Tri](https://open.kattis.com/problems/tri) | 
+| [Triple Texting](https://open.kattis.com/problems/tripletexting) | 
+| [What does the fox say?](https://open.kattis.com/problems/whatdoesthefoxsay) | 
