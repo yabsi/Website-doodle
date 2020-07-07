@@ -3,7 +3,7 @@ title: 'Faster output in Java for Competitive Programming'
 date: 2020-07-06
 permalink: /posts/2020/07/fast-output-java-for-competitive-programming/
 tags:
-  - solved-problems
+  - competitive-programming
 ---
 
 I was solving some Kattis problem and I kept running into a TLE(Time Limit Exceeded).
