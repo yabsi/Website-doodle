@@ -1,16 +1,40 @@
 ---
-title: 'PUF - Senior Design Project'
+title: 'Physical Unclonable Function (PUF) - Senior Design Project'
 date: 2019-05-03
 permalink: /posts/2019/05/senior-design/
 tags:
   - projects
 ---
 
-I made a PUF application for my senior design project, more technical details to come on this.
+For my senior design project, we were presented with the issue of the lack of a TPM in Android devices and figure out a solution to somehow "simulate it". 
+Working under Professor Akhilesh Tyagi and graduate student Timothy M. Dee, we based our solution on this paper: 
 
-<object data="https://yalabsi.com/files/PUF/final_poster.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://yalabsi.com/files/PUF/final_poster.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://yalabsi.com/files/final_poster.pdf">Download PDF</a>.
+<br>
+
+<object data="https://yalabsi.com/files/PUF/paper.pdf" type="application/pdf" width="700px" height="400px">
+    <embed src="https://yalabsi.com/files/PUF/paper.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://yalabsi.com/files/PUF/paper.pdf">Download PDF</a>.
+        </p>
+    </embed>
+</object>
+
+<br>
+
+A PUF(Physical Unclonable Function) is a device that lets you exploit manufacturing randomness to generate a "digital fingerprint". In the case of 
+this project, it was based on the silicon foundry process transistor-level variability embedded in the touchscreen grid of a smartphone(Nexus 7 was used for testing). 
+We were able to develop a mobile application that uses a PUF that asks the user to draw a shape a few times to create a user profile and authenticate against that profile in the future. 
+It proves to be unique and reproducable respectively, by exhibiting the physical unclonable function (PUF) properties: 
+  - Touchscreen gestures are quantized into binary strings.
+  - Gesture hamming distance is 60+ bits for 128-bit strings for different user-device profiles; it is 0 bits for the same profile.
+
+By having the key generate dynamically, that means that it is not stored on the device and that solves the issue of the lack of a TPM. 
+You can see the presentation of the overall project over here: 
+
+<br>
+
+<object data="https://yalabsi.com/files/PUF/final_presentation.pdf" type="application/pdf" width="400px" height="300px">
+    <embed src="https://yalabsi.com/files/PUF/final_presentation.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://yalabsi.com/files/final_presentation.pdf">Download PDF</a>.
         </p>
     </embed>
 </object>
