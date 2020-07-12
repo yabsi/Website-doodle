@@ -13,7 +13,7 @@ name                     : &name "Yousef Alabsi"
 description              : &description "Software Engineer"
 url                      : https://yalabsi.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "yabsi/Website-doodle"
+repository               : "yabsi/yalabsi.com"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -74,7 +74,7 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-100837047-1"
 
 
 # Site Author
