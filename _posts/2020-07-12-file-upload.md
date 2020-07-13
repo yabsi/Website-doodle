@@ -6,11 +6,13 @@ tags:
   - tutorials
 ---
 
-Working on this static website(It's a Jekyll website with no backend), I realized how nice of an option it is, and was thinking of some of the drawbacks like being able to upload images or files(when submitting forms) and storing them somewhere. Without building a backend, I thought of writing a lambda that's connected to an S3 bucket and some javascript code to handle the form uploading.
+I love everything serverless. This website is a static website built with Jekyll. I needed to have a feature to allow users to be able to upload images or files(when submitting forms) and storing them somewhere without building a backend. So, using AWS, I thought of writing a lambda that's connected to an S3 bucket and some javascript code to handle the form uploading.
 
 First thing you'll need to create an S3 bucket, I named mine "staticfileuploads".
 
 If you want all the files in the bucket to be publicly accessible then we can turn off "block all public access" from the permissions tab.
+
+![Image of permissions](https://yalabsi.com/images/static-upload/1.png)
 
 
 ```js
