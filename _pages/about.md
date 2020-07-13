@@ -19,27 +19,26 @@ Experienced with:
   - React with Redux
   - React Native
   - Flask or Serverless
-  - MongoDB
-  - AWS
+  - MongoDB, GraphQL
+  - RabbitMQ, Celery
+  - Java, Python
+  - Git, Docker
   - Bamboo / CircleCI / Jenkins
-  - Git
-  - Docker
-  - Java
   - SCRUM
-  - RabbitMQ
-  - Celery
+  - AWS
 
 Projects I've worked on:
-  - [Mango](https://www.complexcomputation.com/en/download-mango/)
+  - [Mango Graph Studio](https://www.complexcomputation.com/en/download-mango/)
   - [AgPoint](https://www.sourceallies.com/agpoint/)
   - [oAuth1.0 proxy](https://github.com/sourceallies/aws-oauth-1.0-proxy)
-  - [Glean Fields](https://devpost.com/software/glean-fields)
   - [Atlas](http://www.ensoftcorp.com/atlas/)
   - [Structurely Analytics](https://www.structurely.com/features/reporting)
 
 Fun Projects:
   - [Geo: A pizza Arm](https://devpost.com/software/geo-g31phm)
+  - [Glean Fields](https://devpost.com/software/glean-fields)
 
 Currently Learning:
   - Kubernetes
   - Terraform
+  - Rust
