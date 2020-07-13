@@ -8,7 +8,7 @@ tags:
 
 I love everything serverless. This website is a static website built with Jekyll. I needed to have a feature to allow users to be able to upload images or files(when submitting forms) and storing them somewhere without building a backend. So, using AWS, I thought of writing a lambda that's connected to an S3 bucket and some javascript code to handle the form uploading.
 
-#Bucket
+##Bucket
 
 First thing you'll need to create an S3 bucket, I named mine "staticfileuploads".
 
@@ -16,16 +16,16 @@ If you want all the files in the bucket to be publicly accessible then we can tu
 
 ![Image of permissions](https://yalabsi.com/images/static-upload/1.png)
 
-#Lambda
+##Lambda
 
-## Permissions
+### Permissions
 After you create the bucket head over to lambdas and create a new lambda.
 Go for the basic execution role and attach an S3 policy to access the bucket. You can go with a S3:* permission but I'd recommend only giving the least access needed for the IAM role.
 
-## Trigger
+### Trigger
 We need to add a URL that we can post to, go tho the lambda and click on add a trigger. I went with open authentication and open CORS but you can go with a scope of only your website. Once you added it, save the URL for the next steps.
 
-## Code
+### Code
 From your terminal, create a new directory and run the command and follow the default steps:
 `npm init`
 
@@ -53,11 +53,9 @@ exports.handler = async (event) => {
     }
 }
 ```
-Make sure you install the package `npm install aws-sdk`, after you're done zip the files and upload them to the lambda using Actions in the Function code:
+Make sure you install the package `npm install aws-sdk`, after you're done zip the files(including node-modules) and upload them to the lambda using Actions(right side) in the Function code, then upload zip file.
 
-![Image of Actions](https://yalabsi.com/images/static-upload/2.png)
-
-## Test
+### Test
 After its uploaded we're ready to test it. Here's a post request and the response using Postman:
 
 ![Postman](https://yalabsi.com/images/static-upload/3.png)
