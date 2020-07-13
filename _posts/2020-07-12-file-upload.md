@@ -8,6 +8,8 @@ tags:
 
 I love everything serverless. This website is a static website built with Jekyll. I needed to have a feature to allow users to be able to upload images or files(when submitting forms) and storing them somewhere without building a backend. So, using AWS, I thought of writing a lambda that's connected to an S3 bucket and some javascript code to handle the form uploading.
 
+By doing this, you wouldn't have to worry about scalability, cost, or losing files since it's all handled by AWS and lambdas are really cheap.
+
 ## Bucket
 
 First thing you'll need to create an S3 bucket, I named mine "staticfileuploads".
@@ -53,9 +55,28 @@ exports.handler = async (event) => {
     }
 }
 ```
+ I added a fileName parameter but you can always get the type from the base64 encoding and randomize the key to avoid duplicates.
+
 Make sure you install the package `npm install aws-sdk`, after you're done zip the files(including node-modules) and upload them to the lambda using Actions(right side) in the Function code, then upload zip file.
 
 ### Test
-After its uploaded we're ready to test it. Here's a post request and the response using Postman:
+After its uploaded we're ready to test it. Here's a post request and the response using Postman. I encoded the file using this [website](https://www.base64encode.org/).
 
 ![Postman](https://yalabsi.com/images/static-upload/3.png)
+
+
+## Frontend
+
+For the frontend, you can have use a function to encode the file then use a fetch to send the request.
+
+Javascript:
+```js
+function getBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+  });
+}
+```
