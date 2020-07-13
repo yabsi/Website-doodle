@@ -12,8 +12,7 @@ I’m a software engineer who graduated from Iowa State University. I’m passio
 
 I was a teaching Assistant for CS 227 and a Community Advisor in Friley Hall for two years. I’m also an outgoing person who loves to code, work on his personal projects, travel, do competitive programming, and is a frequent participant at hackathons. I worked as a Software Developer at Source Allies and Ensoft Corp.
 
-Currently I'm working a full time job at Structurely as a backend Engineer.
-Structurely is a company that makes conversational AI.
+Currently I'm working a full time job at Structurely as a full stack Engineer with a backend focus. It is a company that makes conversational AI with over 2 million leads.
 
 Experienced with:
   - React with Redux
