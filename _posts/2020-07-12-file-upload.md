@@ -14,7 +14,13 @@ If you want all the files in the bucket to be publicly accessible then we can tu
 
 ![Image of permissions](https://yalabsi.com/images/static-upload/1.png)
 
+After you create the bucket head over to lambdas and create a new lambda.
+Go for the basic execution role and attach an S3 policy to access the bucket. You can go with a S3:* permission but I'd recommend only giving the least access needed for the IAM role.
 
+From your terminal, create a new directory and run the command and follow the default steps:
+`npm init`
+
+index.js:
 ```js
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3();
@@ -22,7 +28,7 @@ const s3 = new AWS.S3();
 exports.handler = async (event) => {
     let request = JSON.parse(event.body);
     let base64String = request.base64String;
-    const bucketName = 'staticfileuploads';
+    const bucketName = 'staticfileuploads'; // Modify your bucket name
     const fileName = request.fileName;
     try {
       const params = {
@@ -38,3 +44,10 @@ exports.handler = async (event) => {
     }
 }
 ```
+Make sure you install the package `npm install aws-sdk`, after you're done zip the files and upload them to the lambda using Actions in the Function code:
+
+![Image of Actions](https://yalabsi.com/images/static-upload/2.png)
+
+After its uploaded we're ready to test it. Here's a post request and the response using Postman:
+
+![Postman](https://yalabsi.com/images/static-upload/3.png)
