@@ -14,10 +14,11 @@ const s3 = new AWS.S3();
 exports.handler = async (event) => {
     let request = JSON.parse(event.body);
     let base64String = request.base64String;
+    const bucketName = ''staticfileuploads';
     const fileName = request.fileName;
     try {
       const params = {
-            Bucket: 'staticfileuploads',
+            Bucket: bucketName,
             Key: fileName,
             Body: Buffer.from(base64String, 'base64')
         };
